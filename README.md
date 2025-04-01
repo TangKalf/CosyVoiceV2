@@ -46,6 +46,27 @@
     - [x] WeTextProcessing support when ttsfrd is not available
     - [x] Fastapi server and client
 
+## run
+基本环境
+py3.10+cuda11.8+pytorch2.0.1
+
+使用说明
+jupyterlab进入控制台，下面三种启动脚本选择一种：
+
+第一种：CosyVoice2-0.5B模型，实现音频复刻
+
+cd /root/CosyVoice && python webui.py --port 6006 --model_dir iic/CosyVoice-300M
+第二种：iic/CosyVoice-300M-SFT模型，提供已有的音色文字转语音
+
+cd /root/CosyVoice && python webui.py --port 6006 --model_dir iic/CosyVoice-300M-SFT
+第一种：iic/CosyVoice-300M-Instruct模型，基于英文指令的语音生成
+
+cd /root/CosyVoice && python webui.py --port 6006 --model_dir iic/CosyVoice-300M-Instruct
+
+作者：zhyqieqie
+链接：https://www.codewithgpu.com/i/FunAudioLLM/CosyVoice/clonevoice_net
+来源：CodeWithGpu
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 ## Install
 
